@@ -1,0 +1,871 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DA20E9E5-4834-4A9D-BCD6-C6431F2B9893}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PUS_tester</RootNamespace>
+    <AssemblyName>PUS_tester</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ST03_Housekeeping\FormRequestST03_33.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ST03_Housekeeping\FormRequestST03_33.Designer.cs">
+      <DependentUpon>FormRequestST03_33.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ST03_Housekeeping\FormRequestST03_29.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ST03_Housekeeping\FormRequestST03_29.Designer.cs">
+      <DependentUpon>FormRequestST03_29.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ST03_Housekeeping\FormRequestST03_01.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ST03_Housekeeping\FormRequestST03_01.Designer.cs">
+      <DependentUpon>FormRequestST03_01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ST03_Housekeeping\FormRequestST03_27.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ST03_Housekeeping\FormRequestST03_27.Designer.cs">
+      <DependentUpon>FormRequestST03_27.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ST03_Housekeeping\FormRequestST03_06.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ST03_Housekeeping\FormRequestST03_06.Designer.cs">
+      <DependentUpon>FormRequestST03_06.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ST03_Housekeeping\FormRequestST03_05.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ST03_Housekeeping\FormRequestST03_05.Designer.cs">
+      <DependentUpon>FormRequestST03_05.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ST03_Housekeeping\FormRequestST03_31.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ST03_Housekeeping\FormRequestST03_31.Designer.cs">
+      <DependentUpon>FormRequestST03_31.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ST03_Housekeeping\FormRequestST03_09.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ST03_Housekeeping\FormRequestST03_09.Designer.cs">
+      <DependentUpon>FormRequestST03_09.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ST03_Housekeeping\FormRequestST03_03.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ST03_Housekeeping\FormRequestST03_03.Designer.cs">
+      <DependentUpon>FormRequestST03_03.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormReport.Designer.cs">
+      <DependentUpon>FormReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Packet.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ST04_ParameterStatistics\FormRequestST04_07.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ST04_ParameterStatistics\FormRequestST04_07.Designer.cs">
+      <DependentUpon>FormRequestST04_07.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ST04_ParameterStatistics\FormRequestST04_06.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ST04_ParameterStatistics\FormRequestST04_06.Designer.cs">
+      <DependentUpon>FormRequestST04_06.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ST04_ParameterStatistics\FormRequestST04_04.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ST04_ParameterStatistics\FormRequestST04_04.Designer.cs">
+      <DependentUpon>FormRequestST04_04.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ST04_ParameterStatistics\FormRequestST04_01.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ST04_ParameterStatistics\FormRequestST04_01.Designer.cs">
+      <DependentUpon>FormRequestST04_01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ST05_EventReport\FormRequestST05_06.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ST05_EventReport\FormRequestST05_06.Designer.cs">
+      <DependentUpon>FormRequestST05_06.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ST05_EventReport\FormRequestST05_05.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ST05_EventReport\FormRequestST05_05.Designer.cs">
+      <DependentUpon>FormRequestST05_05.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ST06_MemoryManagement\FormRequestST06_09.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ST06_MemoryManagement\FormRequestST06_09.Designer.cs">
+      <DependentUpon>FormRequestST06_09.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ST06_MemoryManagement\FormRequestST06_05.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ST06_MemoryManagement\FormRequestST06_05.Designer.cs">
+      <DependentUpon>FormRequestST06_05.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ST06_MemoryManagement\FormRequestST06_02.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ST06_MemoryManagement\FormRequestST06_02.Designer.cs">
+      <DependentUpon>FormRequestST06_02.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ST08_FunctionManagement\FormRequestST08_01.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ST08_FunctionManagement\FormRequestST08_01.Designer.cs">
+      <DependentUpon>FormRequestST08_01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ST11_TimeBasedScheduling\FormRequestST11_15.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ST11_TimeBasedScheduling\FormRequestST11_15.Designer.cs">
+      <DependentUpon>FormRequestST11_15.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ST11_TimeBasedScheduling\FormRequestST11_07.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ST11_TimeBasedScheduling\FormRequestST11_07.Designer.cs">
+      <DependentUpon>FormRequestST11_07.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ST11_TimeBasedScheduling\FormRequestST11_12.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ST11_TimeBasedScheduling\FormRequestST11_12.Designer.cs">
+      <DependentUpon>FormRequestST11_12.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ST11_TimeBasedScheduling\FormRequestST11_09.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ST11_TimeBasedScheduling\FormRequestST11_09.Designer.cs">
+      <DependentUpon>FormRequestST11_09.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ST11_TimeBasedScheduling\FormRequestST11_05.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ST11_TimeBasedScheduling\FormRequestST11_05.Designer.cs">
+      <DependentUpon>FormRequestST11_05.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ST11_TimeBasedScheduling\FormRequestST11_04.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ST11_TimeBasedScheduling\FormRequestST11_04.Designer.cs">
+      <DependentUpon>FormRequestST11_04.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ST12_OnBoardMonitoring\FormRequestST12_03.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ST12_OnBoardMonitoring\FormRequestST12_03.Designer.cs">
+      <DependentUpon>FormRequestST12_03.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ST12_OnBoardMonitoring\FormRequestST12_06.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ST12_OnBoardMonitoring\FormRequestST12_06.Designer.cs">
+      <DependentUpon>FormRequestST12_06.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ST12_OnBoardMonitoring\FormRequestST12_05.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ST12_OnBoardMonitoring\FormRequestST12_05.Designer.cs">
+      <DependentUpon>FormRequestST12_05.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ST12_OnBoardMonitoring\FormRequestST12_08.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ST12_OnBoardMonitoring\FormRequestST12_08.Designer.cs">
+      <DependentUpon>FormRequestST12_08.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ST12_OnBoardMonitoring\FormRequestST12_02.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ST12_OnBoardMonitoring\FormRequestST12_02.Designer.cs">
+      <DependentUpon>FormRequestST12_02.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ST12_OnBoardMonitoring\FormRequestST12_01.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ST12_OnBoardMonitoring\FormRequestST12_01.Designer.cs">
+      <DependentUpon>FormRequestST12_01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ST12_OnBoardMonitoring\FormRequestST12_07.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ST12_OnBoardMonitoring\FormRequestST12_07.Designer.cs">
+      <DependentUpon>FormRequestST12_07.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ST13_LargePacketTransfer\FormRequestST13_11.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ST13_LargePacketTransfer\FormRequestST13_11.Designer.cs">
+      <DependentUpon>FormRequestST13_11.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ST13_LargePacketTransfer\FormRequestST13_10.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ST13_LargePacketTransfer\FormRequestST13_10.Designer.cs">
+      <DependentUpon>FormRequestST13_10.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ST13_LargePacketTransfer\FormRequestST13_09.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ST13_LargePacketTransfer\FormRequestST13_09.Designer.cs">
+      <DependentUpon>FormRequestST13_09.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ST14_RealTimeForwardingControl\FormRequestST14_02.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ST14_RealTimeForwardingControl\FormRequestST14_02.Designer.cs">
+      <DependentUpon>FormRequestST14_02.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ST14_RealTimeForwardingControl\FormRequestST14_01.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ST14_RealTimeForwardingControl\FormRequestST14_01.Designer.cs">
+      <DependentUpon>FormRequestST14_01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ST15_StorageAndRetrieval\FormRequestST15_20.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ST15_StorageAndRetrieval\FormRequestST15_20.Designer.cs">
+      <DependentUpon>FormRequestST15_20.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ST15_StorageAndRetrieval\FormRequestST15_25.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ST15_StorageAndRetrieval\FormRequestST15_25.Designer.cs">
+      <DependentUpon>FormRequestST15_25.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ST15_StorageAndRetrieval\FormRequestST15_24.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ST15_StorageAndRetrieval\FormRequestST15_24.Designer.cs">
+      <DependentUpon>FormRequestST15_24.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ST15_StorageAndRetrieval\FormRequestST15_28.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ST15_StorageAndRetrieval\FormRequestST15_28.Designer.cs">
+      <DependentUpon>FormRequestST15_28.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ST15_StorageAndRetrieval\FormRequestST15_27.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ST15_StorageAndRetrieval\FormRequestST15_27.Designer.cs">
+      <DependentUpon>FormRequestST15_27.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ST15_StorageAndRetrieval\FormRequestST15_26.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ST15_StorageAndRetrieval\FormRequestST15_26.Designer.cs">
+      <DependentUpon>FormRequestST15_26.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ST15_StorageAndRetrieval\FormRequestST15_05.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ST15_StorageAndRetrieval\FormRequestST15_05.Designer.cs">
+      <DependentUpon>FormRequestST15_05.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ST15_StorageAndRetrieval\FormRequestST15_09.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ST15_StorageAndRetrieval\FormRequestST15_09.Designer.cs">
+      <DependentUpon>FormRequestST15_09.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ST15_StorageAndRetrieval\FormRequestST15_14.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ST15_StorageAndRetrieval\FormRequestST15_14.Designer.cs">
+      <DependentUpon>FormRequestST15_14.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ST15_StorageAndRetrieval\FormRequestST15_12.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ST15_StorageAndRetrieval\FormRequestST15_12.Designer.cs">
+      <DependentUpon>FormRequestST15_12.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ST15_StorageAndRetrieval\FormRequestST15_21.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ST15_StorageAndRetrieval\FormRequestST15_21.Designer.cs">
+      <DependentUpon>FormRequestST15_21.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ST15_StorageAndRetrieval\FormRequestST15_17.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ST15_StorageAndRetrieval\FormRequestST15_17.Designer.cs">
+      <DependentUpon>FormRequestST15_17.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ST15_StorageAndRetrieval\FormRequestST15_16.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ST15_StorageAndRetrieval\FormRequestST15_16.Designer.cs">
+      <DependentUpon>FormRequestST15_16.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ST15_StorageAndRetrieval\FormRequestST15_15.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ST15_StorageAndRetrieval\FormRequestST15_15.Designer.cs">
+      <DependentUpon>FormRequestST15_15.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ST15_StorageAndRetrieval\FormRequestST15_11.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ST15_StorageAndRetrieval\FormRequestST15_11.Designer.cs">
+      <DependentUpon>FormRequestST15_11.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ST15_StorageAndRetrieval\FormRequestST15_04.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ST15_StorageAndRetrieval\FormRequestST15_04.Designer.cs">
+      <DependentUpon>FormRequestST15_04.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ST15_StorageAndRetrieval\FormRequestST15_03.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ST15_StorageAndRetrieval\FormRequestST15_03.Designer.cs">
+      <DependentUpon>FormRequestST15_03.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ST15_StorageAndRetrieval\FormRequestST15_02.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ST15_StorageAndRetrieval\FormRequestST15_02.Designer.cs">
+      <DependentUpon>FormRequestST15_02.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ST15_StorageAndRetrieval\FormRequestST15_01.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ST15_StorageAndRetrieval\FormRequestST15_01.Designer.cs">
+      <DependentUpon>FormRequestST15_01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ST17_Test\FormRequestST17_03.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ST17_Test\FormRequestST17_03.Designer.cs">
+      <DependentUpon>FormRequestST17_03.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ST19_EventAction\FormRequestST19_02.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ST19_EventAction\FormRequestST19_02.Designer.cs">
+      <DependentUpon>FormRequestST19_02.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ST19_EventAction\FormRequestST19_10.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ST19_EventAction\FormRequestST19_10.Designer.cs">
+      <DependentUpon>FormRequestST19_10.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ST19_EventAction\FormRequestST19_05.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ST19_EventAction\FormRequestST19_05.Designer.cs">
+      <DependentUpon>FormRequestST19_05.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ST19_EventAction\FormRequestST19_04.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ST19_EventAction\FormRequestST19_04.Designer.cs">
+      <DependentUpon>FormRequestST19_04.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ST19_EventAction\FormRequestST19_01.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ST19_EventAction\FormRequestST19_01.Designer.cs">
+      <DependentUpon>FormRequestST19_01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ST20_Parameter\FormRequestST20_03.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ST20_Parameter\FormRequestST20_03.Designer.cs">
+      <DependentUpon>FormRequestST20_03.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ST20_Parameter\FormRequestST20_01.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ST20_Parameter\FormRequestST20_01.Designer.cs">
+      <DependentUpon>FormRequestST20_01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ST21_RequestSequencing\FormRequestST21_01.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ST21_RequestSequencing\FormRequestST21_01.Designer.cs">
+      <DependentUpon>FormRequestST21_01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ST21_RequestSequencing\FormRequestST21_08.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ST21_RequestSequencing\FormRequestST21_08.Designer.cs">
+      <DependentUpon>FormRequestST21_08.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ST21_RequestSequencing\FormRequestST21_04.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ST21_RequestSequencing\FormRequestST21_04.Designer.cs">
+      <DependentUpon>FormRequestST21_04.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ST21_RequestSequencing\FormRequestST21_11.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ST21_RequestSequencing\FormRequestST21_11.Designer.cs">
+      <DependentUpon>FormRequestST21_11.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ST21_RequestSequencing\FormRequestST21_09.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ST21_RequestSequencing\FormRequestST21_09.Designer.cs">
+      <DependentUpon>FormRequestST21_09.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ST21_RequestSequencing\FormRequestST21_05.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ST21_RequestSequencing\FormRequestST21_05.Designer.cs">
+      <DependentUpon>FormRequestST21_05.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ST21_RequestSequencing\FormRequestST21_03.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ST21_RequestSequencing\FormRequestST21_03.Designer.cs">
+      <DependentUpon>FormRequestST21_03.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ST21_RequestSequencing\FormRequestST21_02.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ST21_RequestSequencing\FormRequestST21_02.Designer.cs">
+      <DependentUpon>FormRequestST21_02.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ST23_FileManagement\FormRequestST23_15.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ST23_FileManagement\FormRequestST23_15.Designer.cs">
+      <DependentUpon>FormRequestST23_15.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ST23_FileManagement\FormRequestST23_14.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ST23_FileManagement\FormRequestST23_14.Designer.cs">
+      <DependentUpon>FormRequestST23_14.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ST23_FileManagement\FormRequestST23_03.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ST23_FileManagement\FormRequestST23_03.Designer.cs">
+      <DependentUpon>FormRequestST23_03.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ST23_FileManagement\FormRequestST23_05.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ST23_FileManagement\FormRequestST23_05.Designer.cs">
+      <DependentUpon>FormRequestST23_05.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ST23_FileManagement\FormRequestST23_12.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ST23_FileManagement\FormRequestST23_12.Designer.cs">
+      <DependentUpon>FormRequestST23_12.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ST23_FileManagement\FormRequestST23_11.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ST23_FileManagement\FormRequestST23_11.Designer.cs">
+      <DependentUpon>FormRequestST23_11.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ST23_FileManagement\FormRequestST23_10.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ST23_FileManagement\FormRequestST23_10.Designer.cs">
+      <DependentUpon>FormRequestST23_10.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ST23_FileManagement\FormRequestST23_09.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ST23_FileManagement\FormRequestST23_09.Designer.cs">
+      <DependentUpon>FormRequestST23_09.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ST23_FileManagement\FormRequestST23_07.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ST23_FileManagement\FormRequestST23_07.Designer.cs">
+      <DependentUpon>FormRequestST23_07.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ST23_FileManagement\FormRequestST23_06.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ST23_FileManagement\FormRequestST23_06.Designer.cs">
+      <DependentUpon>FormRequestST23_06.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ST23_FileManagement\FormRequestST23_02.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ST23_FileManagement\FormRequestST23_02.Designer.cs">
+      <DependentUpon>FormRequestST23_02.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ST23_FileManagement\FormRequestST23_01.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ST23_FileManagement\FormRequestST23_01.Designer.cs">
+      <DependentUpon>FormRequestST23_01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StaticPayload.cs" />
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ST03_Housekeeping\FormRequestST03_33.resx">
+      <DependentUpon>FormRequestST03_33.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ST03_Housekeeping\FormRequestST03_29.resx">
+      <DependentUpon>FormRequestST03_29.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ST03_Housekeeping\FormRequestST03_01.resx">
+      <DependentUpon>FormRequestST03_01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ST03_Housekeeping\FormRequestST03_03.resx">
+      <DependentUpon>FormRequestST03_03.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormReport.resx">
+      <DependentUpon>FormReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ST03_Housekeeping\FormRequestST03_27.resx">
+      <DependentUpon>FormRequestST03_27.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ST03_Housekeeping\FormRequestST03_06.resx">
+      <DependentUpon>FormRequestST03_06.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ST03_Housekeeping\FormRequestST03_05.resx">
+      <DependentUpon>FormRequestST03_05.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ST03_Housekeeping\FormRequestST03_31.resx">
+      <DependentUpon>FormRequestST03_31.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ST03_Housekeeping\FormRequestST03_09.resx">
+      <DependentUpon>FormRequestST03_09.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ST04_ParameterStatistics\FormRequestST04_07.resx">
+      <DependentUpon>FormRequestST04_07.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ST04_ParameterStatistics\FormRequestST04_06.resx">
+      <DependentUpon>FormRequestST04_06.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ST04_ParameterStatistics\FormRequestST04_04.resx">
+      <DependentUpon>FormRequestST04_04.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ST04_ParameterStatistics\FormRequestST04_01.resx">
+      <DependentUpon>FormRequestST04_01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ST05_EventReport\FormRequestST05_06.resx">
+      <DependentUpon>FormRequestST05_06.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ST05_EventReport\FormRequestST05_05.resx">
+      <DependentUpon>FormRequestST05_05.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ST06_MemoryManagement\FormRequestST06_09.resx">
+      <DependentUpon>FormRequestST06_09.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ST06_MemoryManagement\FormRequestST06_05.resx">
+      <DependentUpon>FormRequestST06_05.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ST06_MemoryManagement\FormRequestST06_02.resx">
+      <DependentUpon>FormRequestST06_02.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ST08_FunctionManagement\FormRequestST08_01.resx">
+      <DependentUpon>FormRequestST08_01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ST11_TimeBasedScheduling\FormRequestST11_15.resx">
+      <DependentUpon>FormRequestST11_15.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ST11_TimeBasedScheduling\FormRequestST11_07.resx">
+      <DependentUpon>FormRequestST11_07.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ST11_TimeBasedScheduling\FormRequestST11_12.resx">
+      <DependentUpon>FormRequestST11_12.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ST11_TimeBasedScheduling\FormRequestST11_09.resx">
+      <DependentUpon>FormRequestST11_09.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ST11_TimeBasedScheduling\FormRequestST11_05.resx">
+      <DependentUpon>FormRequestST11_05.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ST11_TimeBasedScheduling\FormRequestST11_04.resx">
+      <DependentUpon>FormRequestST11_04.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ST12_OnBoardMonitoring\FormRequestST12_03.resx">
+      <DependentUpon>FormRequestST12_03.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ST12_OnBoardMonitoring\FormRequestST12_06.resx">
+      <DependentUpon>FormRequestST12_06.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ST12_OnBoardMonitoring\FormRequestST12_05.resx">
+      <DependentUpon>FormRequestST12_05.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ST12_OnBoardMonitoring\FormRequestST12_08.resx">
+      <DependentUpon>FormRequestST12_08.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ST12_OnBoardMonitoring\FormRequestST12_02.resx">
+      <DependentUpon>FormRequestST12_02.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ST12_OnBoardMonitoring\FormRequestST12_01.resx">
+      <DependentUpon>FormRequestST12_01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ST12_OnBoardMonitoring\FormRequestST12_07.resx">
+      <DependentUpon>FormRequestST12_07.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ST13_LargePacketTransfer\FormRequestST13_11.resx">
+      <DependentUpon>FormRequestST13_11.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ST13_LargePacketTransfer\FormRequestST13_10.resx">
+      <DependentUpon>FormRequestST13_10.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ST13_LargePacketTransfer\FormRequestST13_09.resx">
+      <DependentUpon>FormRequestST13_09.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ST14_RealTimeForwardingControl\FormRequestST14_02.resx">
+      <DependentUpon>FormRequestST14_02.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ST14_RealTimeForwardingControl\FormRequestST14_01.resx">
+      <DependentUpon>FormRequestST14_01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ST15_StorageAndRetrieval\FormRequestST15_20.resx">
+      <DependentUpon>FormRequestST15_20.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ST15_StorageAndRetrieval\FormRequestST15_25.resx">
+      <DependentUpon>FormRequestST15_25.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ST15_StorageAndRetrieval\FormRequestST15_24.resx">
+      <DependentUpon>FormRequestST15_24.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ST15_StorageAndRetrieval\FormRequestST15_28.resx">
+      <DependentUpon>FormRequestST15_28.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ST15_StorageAndRetrieval\FormRequestST15_27.resx">
+      <DependentUpon>FormRequestST15_27.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ST15_StorageAndRetrieval\FormRequestST15_26.resx">
+      <DependentUpon>FormRequestST15_26.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ST15_StorageAndRetrieval\FormRequestST15_05.resx">
+      <DependentUpon>FormRequestST15_05.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ST15_StorageAndRetrieval\FormRequestST15_09.resx">
+      <DependentUpon>FormRequestST15_09.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ST15_StorageAndRetrieval\FormRequestST15_14.resx">
+      <DependentUpon>FormRequestST15_14.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ST15_StorageAndRetrieval\FormRequestST15_12.resx">
+      <DependentUpon>FormRequestST15_12.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ST15_StorageAndRetrieval\FormRequestST15_21.resx">
+      <DependentUpon>FormRequestST15_21.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ST15_StorageAndRetrieval\FormRequestST15_17.resx">
+      <DependentUpon>FormRequestST15_17.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ST15_StorageAndRetrieval\FormRequestST15_16.resx">
+      <DependentUpon>FormRequestST15_16.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ST15_StorageAndRetrieval\FormRequestST15_15.resx">
+      <DependentUpon>FormRequestST15_15.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ST15_StorageAndRetrieval\FormRequestST15_11.resx">
+      <DependentUpon>FormRequestST15_11.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ST15_StorageAndRetrieval\FormRequestST15_04.resx">
+      <DependentUpon>FormRequestST15_04.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ST15_StorageAndRetrieval\FormRequestST15_03.resx">
+      <DependentUpon>FormRequestST15_03.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ST15_StorageAndRetrieval\FormRequestST15_02.resx">
+      <DependentUpon>FormRequestST15_02.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ST15_StorageAndRetrieval\FormRequestST15_01.resx">
+      <DependentUpon>FormRequestST15_01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ST17_Test\FormRequestST17_03.resx">
+      <DependentUpon>FormRequestST17_03.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ST19_EventAction\FormRequestST19_02.resx">
+      <DependentUpon>FormRequestST19_02.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ST19_EventAction\FormRequestST19_10.resx">
+      <DependentUpon>FormRequestST19_10.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ST19_EventAction\FormRequestST19_05.resx">
+      <DependentUpon>FormRequestST19_05.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ST19_EventAction\FormRequestST19_04.resx">
+      <DependentUpon>FormRequestST19_04.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ST19_EventAction\FormRequestST19_01.resx">
+      <DependentUpon>FormRequestST19_01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ST20_Parameter\FormRequestST20_03.resx">
+      <DependentUpon>FormRequestST20_03.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ST20_Parameter\FormRequestST20_01.resx">
+      <DependentUpon>FormRequestST20_01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ST21_RequestSequencing\FormRequestST21_01.resx">
+      <DependentUpon>FormRequestST21_01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ST21_RequestSequencing\FormRequestST21_08.resx">
+      <DependentUpon>FormRequestST21_08.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ST21_RequestSequencing\FormRequestST21_04.resx">
+      <DependentUpon>FormRequestST21_04.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ST21_RequestSequencing\FormRequestST21_11.resx">
+      <DependentUpon>FormRequestST21_11.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ST21_RequestSequencing\FormRequestST21_09.resx">
+      <DependentUpon>FormRequestST21_09.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ST21_RequestSequencing\FormRequestST21_05.resx">
+      <DependentUpon>FormRequestST21_05.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ST21_RequestSequencing\FormRequestST21_03.resx">
+      <DependentUpon>FormRequestST21_03.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ST21_RequestSequencing\FormRequestST21_02.resx">
+      <DependentUpon>FormRequestST21_02.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ST23_FileManagement\FormRequestST23_15.resx">
+      <DependentUpon>FormRequestST23_15.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ST23_FileManagement\FormRequestST23_14.resx">
+      <DependentUpon>FormRequestST23_14.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ST23_FileManagement\FormRequestST23_03.resx">
+      <DependentUpon>FormRequestST23_03.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ST23_FileManagement\FormRequestST23_05.resx">
+      <DependentUpon>FormRequestST23_05.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ST23_FileManagement\FormRequestST23_12.resx">
+      <DependentUpon>FormRequestST23_12.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ST23_FileManagement\FormRequestST23_11.resx">
+      <DependentUpon>FormRequestST23_11.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ST23_FileManagement\FormRequestST23_10.resx">
+      <DependentUpon>FormRequestST23_10.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ST23_FileManagement\FormRequestST23_09.resx">
+      <DependentUpon>FormRequestST23_09.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ST23_FileManagement\FormRequestST23_07.resx">
+      <DependentUpon>FormRequestST23_07.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ST23_FileManagement\FormRequestST23_06.resx">
+      <DependentUpon>FormRequestST23_06.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ST23_FileManagement\FormRequestST23_02.resx">
+      <DependentUpon>FormRequestST23_02.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ST23_FileManagement\FormRequestST23_01.resx">
+      <DependentUpon>FormRequestST23_01.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
