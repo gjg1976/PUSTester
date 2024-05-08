@@ -1,0 +1,7 @@
+﻿<xml>
+	<template name="ST[17,04] OnBoard Connection Test Report" l="576" h="770">
+		<item type="Label" name="labelAPID" text="APID" x="12" y="18" l="70" h="13" data_type="" data_offset="0"/>			
+		<item type="TextBox" name="textboxAPID" text="-" x="120" y="15" l="70" h="20" data_type="uint16" data_offset="0" data_mask="0xffff" data_shift="0"/>	
+	</template>			
+</xml>
+

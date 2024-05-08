@@ -1,0 +1,7 @@
+﻿<xml>
+	<template name="ST[05,01] Informative Event Report" l="576" h="770">
+		<item type="TextBox" name="textEventID" text="-" x="230" y="30" l="60" h="20" data_type="uint16" data_size="2" data_mask="0xffff" data_shift="0" id="false"/>	
+		<item type="Label" name="labelEventID" text="Event ID " x="120" y="2" l="100" h="13" data_type=""/>	
+	</template>			
+</xml>
+

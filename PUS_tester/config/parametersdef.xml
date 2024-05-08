@@ -1,0 +1,11 @@
+<xml>
+	<param id="1" name="Parametro 1" type="uint8" data_size="1"/>
+	<param id="5" name="Parametro 5" type="double" data_size="8"/>
+	<param id="11" name="Parametro 11" type="bool" data_size="1" />
+	<param id="34" name="Parametro 34" type="int16" data_size="2"/>
+	<param id="15" name="Parametro 15" type="double" data_size="8"/>
+	<param id="16" name="Parametro 16" type="uint8" data_size="1"/>
+	<param id="31" name="Parametro 31" type="uint8" data_size="1"/>	
+	<param id="32" name="Parametro 32" type="uint16" data_size="2"/>	
+	<param id="128" name="Parametro 128" type="uint16" data_size="2"/>
+</xml>

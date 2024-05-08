@@ -1,0 +1,23 @@
+﻿<xml>
+	<template name="ST[03,01] Create Housekeeping Report Structure" l="576" h="800">
+		<item type="TextBox" name="textboxHKParamStructID" text="-" x="120" y="15" l="70" h="20" data_type="uint8" data_size="1" data_mask="0xff" data_shift="0" />	
+		<item type="Label" name="labelHKParamStructID" text="Param Struct ID" x="12" y="3" l="70" h="13" data_type=""/>			
+		<item type="CheckBox" name="checkboxPeriodicGen" text="Periodic Generation" x="12" y="30" l="150" h="20" data_type="uint8" data_size="1" data_mask="0xff" data_shift="0" />	
+		<item type="TextBox" name="textboxCollectionInterval" text="-" x="120" y="30" l="70" h="20" data_type="uint16" data_size="2" data_mask="0xffff" data_shift="0"/>	
+		<item type="Label" name="labelCollectionInterval" text="Collection Interval" x="12" y="2" l="100" h="13" data_type=""/>			
+		<item type="Repeater" x="120" y="30" data_type="uint16" data_size="2" data_mask="0xffff" data_shift="0" >
+			<subitem type="TextBox" name="textParam" text="-" x="120" y="0" l="70" h="20" data_type="uint16" data_size="2" data_mask="0xffff" data_shift="0"/>	
+			<subitem type="Label" name="labelParam" text="Parameter ID " x="12" y="3" l="90" h="13" data_type=""/>			
+		</item>
+		<item type="Repeater" x="220" y="30" data_type="uint16" data_size="2" data_mask="0xffff" data_shift="0" >
+			<subitem type="Label" name="labelSuper" text="Super Conmutated Array " x="12" y="0" l="300" h="13" data_type=""/>			
+			<subitem type="TextBox" name="textSuperInterval" text="-" x="220" y="30" l="70" h="20" data_type="uint8" data_size="1" data_mask="0xff" data_shift="0"/>	
+			<subitem type="Label" name="labelSuperInterval" text="Super Repetition " x="112" y="3" l="90" h="13" data_type=""/>			
+			<subitem type="Repeater" x="320" y="30" data_type="uint8" data_size="1" data_mask="0xff" data_shift="0" >
+				<subitem type="TextBox" name="textParam" text="-" x="320" y="0" l="70" h="20" data_type="uint16" data_size="2" data_mask="0xffff" data_shift="0"/>	
+				<subitem type="Label" name="labelParam" text="Parameter ID " x="212" y="3" l="90" h="13" data_type=""/>			
+			</subitem>
+		</item>
+	</template>			
+</xml>
+

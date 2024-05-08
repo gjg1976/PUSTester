@@ -1,0 +1,55 @@
+﻿<xml>
+	<template name="ST[12,09] Parameter Monitoring Definition Report" l="576" h="770">
+		<item type="TextBox" name="textMaxRepDelay" text="-" x="110" y="30" l="50" h="20" data_type="uint16" data_size="2" data_mask="0xffff" data_shift="0" id="false"/>
+		<item type="Label" name="labelMaxRepDelay" text="Max Report Delay" x="12" y="2" l="90" h="13" data_type=""/>			
+		<item type="Repeater" x="120" y="30" data_type="uint16" data_size="2" data_mask="0xffff" data_shift="0" >
+			<subitem type="TextBox" name="textPMONID" text="-" x="110" y="0" l="30" h="20" data_type="uint16" data_size="2" data_mask="0xffff" data_shift="0" id="false" />	
+			<subitem type="TextBox" name="textParamID" text="-" x="230" y="0" l="70" h="20" data_type="uint16" data_size="2" data_mask="0xffff" data_shift="0" id="true"/>	
+			<subitem type="Label" name="labelPMONID" text="PMON ID " x="12" y="2" l="90" h="13" data_type=""/>			
+			<subitem type="Label" name="labelParamID" text="Parameter ID " x="160" y="0" l="60" h="13" data_type=""/>			
+			<subitem type="TextBox" name="textMonInt" text="-" x="230" y="30" l="70" h="20" data_type="uint16" data_size="2" data_mask="0xffff" data_shift="0" id="false"/>	
+			<subitem type="CheckBox" name="checkboxParamMonEnable" text="Status " x="310" y="0" l="60" h="20" data_type="uint8" data_size="1" data_mask="0x01" data_shift="0" id="false"/>
+			<subitem type="TextBox" name="textMonRep" text="-" x="430" y="0" l="70" h="20" data_type="uint16" data_size="2" data_mask="0xffff" data_shift="0" id="false"/>	
+			<subitem type="Label" name="labelMonInt" text="Mon interval " x="160" y="2" l="60" h="13" data_type=""/>			
+			<subitem type="Label" name="labelMonRep" text="Repetitions " x="370" y="2" l="60" h="13" data_type=""/>			
+			<subitem type="Label" name="labelType" text="Type " x="160" y="30" l="60" h="13" data_type=""/>	
+			<subitem type="ComboBox" name="comboBoxType" x="220" y="-3" l="90" h="13" data_type="uint8" data_size="1" data_mask="0xff" data_shift="0" >
+				<option value="0" label="Expected">
+					<subitem type="TextBox" name="textExpectedMask" text="-" x="330" y="30" l="50" h="20" data_type="id" data_size="0" data_mask="-1" data_shift="0" id="false"/>	
+					<subitem type="TextBox" name="textExpectedValue" text="-" x="480" y="0" l="50" h="20" data_type="id" data_size="0" data_mask="-1" data_shift="0" id="false"/>	
+					<subitem type="Label" name="labelExpectedMask" text="Expected Mask " x="200" y="2" l="100" h="13" data_type=""/>	
+					<subitem type="Label" name="labelExpectedValue" text="Expected Value " x="380" y="0" l="100" h="13" data_type=""/>			
+					<subitem type="TextBox" name="textUnexpectedValueRID" text="-" x="480" y="30" l="50" h="20" data_type="uint16" data_size="2" data_mask="0xffff" data_shift="0" id="false"/>	
+					<subitem type="Label" name="labelUnexpectedValueRID" text="Unexpected RID " x="380" y="0" l="100" h="13" data_type=""/>			
+				</option>	
+				<option value="1" label="Limit">
+					<subitem type="TextBox" name="textLowLimit" text="-" x="330" y="30" l="50" h="20" data_type="id" data_size="0" data_mask="-1" data_shift="0" id="false"/>	
+					<subitem type="TextBox" name="textBelowLimitRID" text="-" x="480" y="0" l="50" h="20" data_type="uint16" data_size="2" data_mask="0xffff" data_shift="0" id="false"/>	
+					<subitem type="Label" name="labelLowLimit" text="Low Limit " x="200" y="2" l="90" h="13" data_type=""/>			
+					<subitem type="Label" name="labelBelowLimitRID" text="Below Limit RID " x="380" y="0" l="100" h="13" data_type=""/>			
+					<subitem type="TextBox" name="textHighLimit" text="-" x="330" y="30" l="50" h="20" data_type="id" data_size="0" data_mask="-1" data_shift="0" id="false"/>	
+					<subitem type="TextBox" name="textAboveLimitRID" text="-" x="480" y="0" l="50" h="20" data_type="uint16" data_size="2" data_mask="0xffff" data_shift="0" id="false"/>	
+					<subitem type="Label" name="labelHighLimit" text="High Limit " x="200" y="2" l="90" h="13" data_type=""/>	
+					<subitem type="Label" name="labelAboveLimitRID" text="Above Limit RID " x="380" y="0" l="100" h="13" data_type=""/>			
+				</option>		
+				<option value="2" label="Delta">
+					<subitem type="TextBox" name="textDeltaLowLimit" text="-" x="330" y="30" l="50" h="20" data_type="id" data_size="0" data_mask="-1" data_shift="0" id="false"/>	
+					<subitem type="TextBox" name="textBelowDeltaLimitRID" text="-" x="480" y="0" l="50" h="20" data_type="uint16" data_size="2" data_mask="0xffff" data_shift="0" id="false"/>	
+					<subitem type="Label" name="labelDeltaLowLimit" text="Low Limit " x="200" y="2" l="90" h="13" data_type=""/>			
+					<subitem type="Label" name="labelBelowDeltaLimitRID" text="Below Limit RID " x="380" y="0" l="100" h="13" data_type=""/>			
+					<subitem type="TextBox" name="textDeltaHighLimit" text="-" x="330" y="30" l="50" h="20" data_type="id" data_size="0" data_mask="-1" data_shift="0" id="false"/>	
+					<subitem type="TextBox" name="textAboveDeltaLimitRID" text="-" x="480" y="0" l="50" h="20" data_type="uint16" data_size="2" data_mask="0xffff" data_shift="0" id="false"/>	
+					<subitem type="Label" name="labelDeltaHighLimit" text="High Limit " x="200" y="2" l="90" h="13" data_type=""/>	
+					<subitem type="Label" name="labelAboveDeltaLimitRID" text="Above Limit RID " x="380" y="0" l="100" h="13" data_type=""/>			
+					<subitem type="TextBox" name="textDeltaCount" text="-" x="330" y="30" l="50" h="20" data_type="uint16" data_size="2" data_mask="0xffff" data_shift="0" id="false"/>	
+					<subitem type="Label" name="labelDeltaCount" text="Delta count " x="200" y="2" l="90" h="13" data_type=""/>	
+
+				</option>		
+			</subitem>	
+	
+		</item>
+	
+	
+	</template>			
+</xml>
+

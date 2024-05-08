@@ -1,0 +1,646 @@
+<xml>
+  <service name="ST[01] Request Verification">
+    <subservice name="ST[01,01] Successful Acceptance Report">
+      <packet id="149" name="ST[01,01] Successful Acceptance Report" type="0" service="1" subservice="1" template="report_tm[1_1].xml">
+      </packet>
+    </subservice>
+    <subservice name="ST[01,02] Failed Acceptance Report">
+      <packet id="150" name="ST[01,02] Failed Acceptance Report" type="0" service="1" subservice="2" template="report_tm[1_2].xml">
+      </packet>
+    </subservice>
+    <subservice name="ST[01,03] Successful Start Of Execution">
+      <packet id="151" name="ST[01,03] Successful Start Of Execution" type="0" service="1" subservice="3" template="report_tm[1_3].xml">
+      </packet>
+    </subservice>
+    <subservice name="ST[01,04] Failed Start Of Execution">
+      <packet id="152" name="ST[01,04] Failed Start Of Execution" type="0" service="1" subservice="4" template="report_tm[1_4].xml">
+      </packet>
+    </subservice>
+    <subservice name="ST[01,05] Successful Progress Of Execution">
+      <packet id="001" name="ST[01,05] Successful Progress Of Execution" type="0" service="1" subservice="5" template="report_tm[1_5].xml">
+      </packet>
+    </subservice>
+    <subservice name="ST[01,06] Failed Progress Of Execution">
+      <packet id="002" name="ST[01,06] Failed Progress Of Execution" type="0" service="1" subservice="6" template="report_tm[1_6].xml">
+      </packet>
+    </subservice>
+    <subservice name="ST[01,07] Successful Completion Of Execution">
+      <packet id="003" name="ST[01,07] Successful Completion Of Execution" type="0" service="1" subservice="7" template="report_tm[1_7].xml">
+      </packet>
+    </subservice>
+    <subservice name="ST[01,08] Failed Completion Of Execution">
+      <packet id="004" name="ST[01,08] Failed Completion Of Execution" type="0" service="1" subservice="8" template="report_tm[1_8].xml">
+      </packet>
+    </subservice>
+    <subservice name="ST[01,10] Failed Routing Report">
+      <packet id="005" name="ST[01,10] Failed Routing Report" type="0" service="1" subservice="10" template="report_tm[1_10].xml">
+      </packet>
+    </subservice>
+  </service>
+  <service name="ST[03] Housekeeping">
+    <subservice name="ST[03,01] Create Housekeeping Report Structure" type="2" service="3" subservice="1" form="FormRequestST03_01">
+      <packet id="006" name="ST[03,01] Create Housekeeping Report Structure" description="Creates a telemetry structure" type="1" service="3" subservice="1" ack="15" data="02000a0005000100040005001600120000" form="FormRequestST03_01">
+      </packet>
+    </subservice>
+    <subservice name="ST[03,03] Delete Housekeeping Report Structure" type="2" service="3" subservice="3" form="FormRequestST03_03">
+      <packet id="007" name="ST[03,03] Delete Housekeeping Report Structure" type="1" service="3" subservice="3" ack="15" data="020104" form="FormRequestST03_03">
+      </packet>
+    </subservice>
+    <subservice name="ST[03,05] Enable Periodic Housekeeping Parameters Report" type="2" service="3" subservice="5" form="FormRequestST03_05">
+      <packet id="008" name="ST[03,05] Enable Periodic Housekeeping Parameters Report" type="1" service="3" subservice="5" ack="15" data="0104" form="FormRequestST03_05">
+      </packet>
+    </subservice>
+    <subservice name="ST[03,06] Disable Periodic Housekeeping Parameters Report" type="2" service="3" subservice="6" form="FormRequestST03_06">
+      <packet id="009" name="ST[03,06] Disable Periodic Housekeeping Parameters Report" type="1" service="3" subservice="6" ack="15" data="0104" form="FormRequestST03_06">
+      </packet>
+    </subservice>
+    <subservice name="ST[03,09] Report Housekeeping Structures" type="2" service="3" subservice="9" form="FormRequestST03_09">
+      <packet id="010" name="ST[03,09] Report Housekeeping Structures" type="1" service="3" subservice="9" ack="0" data="03010407" form="FormRequestST03_09">
+      </packet>
+    </subservice>
+    <subservice name="ST[03,10] Housekeeping Structures Report">
+      <packet id="011" name="ST[03,10] Housekeeping Structures Report" type="0" service="3" subservice="10" template="report_tm[3_10].xml">
+      </packet>
+    </subservice>
+    <subservice name="ST[03,25] Housekeeping Parameters Report">
+      <packet id="012" name="ST[03,25] Housekeeping Parameters Report" type="0" service="3" subservice="25" template="report_tm[3_25].xml">
+      </packet>
+    </subservice>
+    <subservice name="ST[03,27] Generate One Shot Housekeeping Report" type="2" service="3" subservice="27" form="FormRequestST03_27">
+      <packet id="013" name="ST[03,27] Generate One Shot Housekeeping Report" type="1" service="3" subservice="27" ack="15" data="0104" form="FormRequestST03_27">
+      </packet>
+    </subservice>
+    <subservice name="ST[03,29] Append Parameters To Housekeeping Structure" type="2" service="3" subservice="29" form="FormRequestST03_29">
+      <packet id="014" name="ST[03,29] Append Parameters To Housekeeping Structure" type="1" service="3" subservice="29" ack="0" data="040002001f000f0001040200160017" form="FormRequestST03_29">
+      </packet>
+    </subservice>
+    <subservice name="ST[03,31] Modify Collection Interval Of Structures" type="2" service="3" subservice="31" form="FormRequestST03_31">
+      <packet id="015" name="ST[03,31] Modify Collection Interval Of Structures" type="1" service="3" subservice="31" ack="15" data="01010100" form="FormRequestST03_31">
+      </packet>
+    </subservice>
+    <subservice name="ST[03,33] Report Housekeeping Periodic Properties" type="2" service="3" subservice="33" form="FormRequestST03_33">
+      <packet id="016" name="ST[03,33] Report Housekeeping Periodic Properties" type="1" service="3" subservice="33" ack="15" data="0104" form="FormRequestST03_33">
+      </packet>
+    </subservice>
+    <subservice name="ST[03,35] Housekeeping Periodic Properties Report">
+      <packet id="017" name="ST[03,35] Housekeeping Periodic Properties Report" type="0" service="3" subservice="35" template="report_tm[3_35].xml">
+      </packet>
+    </subservice>
+  </service>
+  <service name="ST[04] Parameter Statistics Reporting">
+    <subservice name="ST[04,01] Report Parameter Statistics" type="2" service="4" subservice="1" form="FormRequestST04_01">
+      <packet id="018" name="ST[04,01] Report Parameter Statistics" type="1" service="4" subservice="1" ack="15" data="00">
+      </packet>
+    </subservice>
+    <subservice name="ST[04,02] Parameter Statistics Report">
+      <packet id="019" name="ST[04,02] Parameter Statistics Report" type="0" service="4" subservice="2" template="report_tm[4_2].xml">
+      </packet>
+    </subservice>
+    <subservice name="ST[04,03] Reset Parameter Statistics">
+      <packet id="020" name="ST[04,03] Reset Parameter Statistics" type="1" service="4" subservice="3" ack="15" data="">
+      </packet>
+    </subservice>
+    <subservice name="ST[04,04] Enable Periodic Parameter Reporting" type="2" service="4" subservice="4" form="FormRequestST04_04">
+      <packet id="021" name="ST[04,04] Enable Periodic Parameter Reporting" type="1" service="4" subservice="4" ack="15" data="07d00000">
+      </packet>
+    </subservice>
+    <subservice name="ST[04,05] Disable Periodic Parameter Reporting">
+      <packet id="022" name="ST[04,05] Disable Periodic Parameter Reporting" type="1" service="4" subservice="5" ack="15" data="">
+      </packet>
+    </subservice>
+    <subservice name="ST[04,06] Add Or Update Parameter Statistics Definitions" type="2" service="4" subservice="6" form="FormRequestST04_06">
+      <packet id="023" name="ST[04,06] Add Or Update Parameter Statistics Definitions" type="1" service="4" subservice="6" ack="15" data="00010020ffff">
+      </packet>
+    </subservice>
+    <subservice name="ST[04,07] Delete Parameter Statistics Definitions" type="2" service="4" subservice="7" form="FormRequestST04_07">
+      <packet id="024" name="ST[04,07] Delete Parameter Statistics Definitions" type="1" service="4" subservice="7" ack="15" data="00010020">
+      </packet>
+    </subservice>
+    <subservice name="ST[04,08] Report Parameter Statistics Definitions">
+      <packet id="025" name="ST[04,08] Report Parameter Statistics Definitions" type="1" service="4" subservice="8" ack="0" data="">
+      </packet>
+    </subservice>
+    <subservice name="ST[04,09] Parameter Statistics Definitions Report">
+      <packet id="026" name="ST[04,09] Parameter Statistics Definitions Report" type="0" service="4" subservice="9" template="report_tm[4_9].xml">
+      </packet>
+    </subservice>
+  </service>
+  <service name="ST[05] Event Reporting">
+    <subservice name="ST[05,01] Informative Event Report">
+      <packet id="027" name="ST[05,01] Informative Event Report" type="0" service="5" subservice="1" template="report_tm[5_1].xml">
+      </packet>
+    </subservice>
+    <subservice name="ST[05,02] LowSeverity Anomaly Report">
+      <packet id="028" name="ST[05,02] LowSeverity Anomaly Report" type="0" service="5" subservice="2" template="report_tm[5_2].xml">
+      </packet>
+    </subservice>
+    <subservice name="ST[05,03] Medium Severity Anomaly Report">
+      <packet id="029" name="ST[05,03] Medium Severity Anomaly Report" type="0" service="5" subservice="3" template="report_tm[5_3].xml">
+      </packet>
+    </subservice>
+    <subservice name="ST[05,04] High Severity Anomaly Report">
+      <packet id="030" name="ST[05,04] High Severity Anomaly Report" type="0" service="5" subservice="4" template="report_tm[5_4].xml">
+      </packet>
+    </subservice>
+    <subservice name="ST[05,05] Enable Report Generation Of Events" type="2" service="5" subservice="5" form="FormRequestST05_05">
+      <packet id="031" name="ST[05,05] Enable Report Generation Of Events" type="1" service="5" subservice="5" ack="15" data="">
+      </packet>
+    </subservice>
+    <subservice name="ST[05,06] Disable Report Generation Of Events" type="2" service="5" subservice="6" form="FormRequestST05_06">
+      <packet id="032" name="ST[05,06] Disable Report Generation Of Events" type="1" service="5" subservice="6" ack="15" data="">
+      </packet>
+    </subservice>
+    <subservice name="ST[05,07] Report List Of Disabled Events">
+      <packet id="033" name="ST[05,07] Report List Of Disabled Events" type="1" service="5" subservice="7" ack="15" data="">
+      </packet>
+    </subservice>
+    <subservice name="ST[05,08] Disabled List Event Report">
+      <packet id="034" name="ST[05,08] Disabled List Event Report" type="0" service="5" subservice="8" template="report_tm[5_8].xml">
+      </packet>
+    </subservice>
+  </service>
+  <service name="ST[06] Memory Management" type="255" service="06" specialGUI="0">
+    <subservice name="ST[06,02] Load Raw Memory Data Areas" type="2" service="6" subservice="2" form="FormRequestST06_02">
+      <packet id="035" name="ST[06,02] Load Raw Memory Data Areas" description="Load memory with raw data" type="1" service="6" subservice="2" ack="15" data="">
+      </packet>
+    </subservice>
+    <subservice name="ST[06,05] Dump Raw Memory Data" type="2" service="6" subservice="5" form="FormRequestST06_05">
+      <packet id="036" name="ST[06,05] Dump Raw Memory Data" type="1" service="6" subservice="5" ack="15" data="">
+      </packet>
+    </subservice>
+    <subservice name="ST[06,06] Dump Raw Memory Data Report">
+      <packet id="037" name="ST[06,06] Dump Raw Memory Data Report" type="0" service="6" subservice="6" template="report_tm[6_6].xml">
+      </packet>
+    </subservice>
+    <subservice name="ST[06,09] Check Raw Memory Data" type="2" service="6" subservice="9" form="FormRequestST06_09">
+      <packet id="038" name="ST[06,09] Check Raw Memory Data" type="1" service="6" subservice="9" ack="15" data="">
+      </packet>
+    </subservice>
+    <subservice name="ST[06,10] Check Raw Memory Data Report">
+      <packet id="039" name="ST[06,10] Check Raw Memory Data Report" type="0" service="6" subservice="10" template="report_tm[6_10].xml">
+      </packet>
+    </subservice>
+  </service>
+  <service name="ST[08] Function Management">
+    <subservice name="ST[08,01] Perform Function" type="2" service="8" subservice="1" form="FormRequestST08_01">
+      <packet id="040" name="ST[08,01] Perform Function" type="1" service="8" subservice="1" ack="15" data="">
+      </packet>
+    </subservice>
+  </service>
+  <service name="ST[11] Time-based Scheduling" type="255" service="11" specialGUI="1">
+    <subservice name="ST[11,01] Enable Time Based Schedule Execution Function">
+      <packet id="041" name="ST[11,01] Enable Time Based Schedule Execution Function" type="1" service="11" subservice="1" ack="15" data="">
+      </packet>
+    </subservice>
+    <subservice name="ST[11,02] Disable Time Based Schedule Execution Function">
+      <packet id="042" name="ST[11,02] Disable Time Based Schedule Execution Function" type="1" service="11" subservice="2" ack="15" data="">
+      </packet>
+    </subservice>
+    <subservice name="ST[11,03] Reset Time Based Schedule">
+      <packet id="043" name="ST[11,03] Reset Time Based Schedule" type="1" service="11" subservice="3" ack="15" data="">
+      </packet>
+    </subservice>
+    <subservice name="ST[11,04] Insert Activities" type="2" service="11" subservice="2" form="FormRequestST11_04">
+      <packet id="044" name="ST[11,04] Insert Activities" type="1" service="11" subservice="4" ack="15" data="">
+      </packet>
+    </subservice>
+    <subservice name="ST[11,05] Delete Activities By Id" type="2" service="11" subservice="5" form="FormRequestST11_05">
+      <packet id="045" name="ST[11,05] Delete Activities By Id" type="1" service="11" subservice="5" ack="15" data="">
+      </packet>
+    </subservice>
+    <subservice name="ST[11,07] Time Shift Activities By Id" type="2" service="11" subservice="7" form="FormRequestST11_07">
+      <packet id="046" name="ST[11,07] Time Shift Activities By Id" type="1" service="11" subservice="7" ack="15" data="">
+      </packet>
+    </subservice>
+    <subservice name="ST[11,09] Detail Report Activities By Id" type="2" service="11" subservice="9" form="FormRequestST11_09">
+      <packet id="047" name="ST[11,09] Detail Report Activities By Id" type="1" service="11" subservice="9" ack="15" data="">
+      </packet>
+    </subservice>
+    <subservice name="ST[11,10] Time Based ScheduleReport By Id">
+      <packet id="048" name="ST[11,10] Time Based ScheduleReport By Id" type="0" service="11" subservice="10" template="report_tm[11_10].xml">
+      </packet>
+    </subservice>
+    <subservice name="ST[11,12] Activities Summary Report By Id" type="2" service="11" subservice="12" form="FormRequestST11_12">
+      <packet id="049" name="ST[11,12] Activities Summary Report By Id" type="1" service="11" subservice="12" ack="15" data="">
+      </packet>
+    </subservice>
+    <subservice name="ST[11,13] Time Based Scheduled Summary Report">
+      <packet id="050" name="ST[11,13] Time Based Scheduled Summary Report" type="0" service="11" subservice="13" template="report_tm[11_13].xml">
+      </packet>
+    </subservice>
+    <subservice name="ST[11,15] Time Shift All Scheduled Activities" type="2" service="11" subservice="15" form="FormRequestST11_15">
+      <packet id="051" name="ST[11,15] Time Shift All Scheduled Activities" type="1" service="11" subservice="15" ack="15" data="">
+      </packet>
+    </subservice>
+    <subservice name="ST[11,16] Detail Report All Scheduled Activities">
+      <packet id="052" name="ST[11,16] Detail Report All Scheduled Activities" type="1" service="11" subservice="16" ack="15" data="">
+      </packet>
+    </subservice>
+  </service>
+  <service name="ST[12] On-board monitoring">
+    <subservice name="ST[12,01] Enable Parameter Monitoring Definitions" type="2" service="11" subservice="1" form="FormRequestST12_01">
+      <packet id="053" name="ST[12,01] Enable Parameter Monitoring Definitions" type="1" service="12" subservice="1" ack="15" data="">
+      </packet>
+    </subservice>
+    <subservice name="ST[12,02] Disable Parameter Monitoring Definitions" type="2" service="11" subservice="2" form="FormRequestST12_02">
+      <packet id="054" name="ST[12,02] Disable Parameter Monitoring Definitions" type="1" service="12" subservice="2" ack="15" data="">
+      </packet>
+    </subservice>
+    <subservice name="ST[12,03] Change Maximum Transition Reporting Delay" type="2" service="11" subservice="3" form="FormRequestST12_03">
+      <packet id="055" name="ST[12,03] Change Maximum Transition Reporting Delay" type="1" service="12" subservice="3" ack="15" data="">
+      </packet>
+    </subservice>
+    <subservice name="ST[12,04] Delete All Parameter Monitoring Definitions">
+      <packet id="056" name="ST[12,04] Delete All Parameter Monitoring Definitions" type="1" service="12" subservice="4" ack="15" data="">
+      </packet>
+    </subservice>
+    <subservice name="ST[12,05] Add Parameter Monitoring Definitions" type="2" service="11" subservice="5" form="FormRequestST12_05">
+      <packet id="057" name="ST[12,05] Add Parameter Monitoring Definitions" type="1" service="12" subservice="5" ack="15" data="000a000a0001001001000101e00005a1000a0000000101340100">
+      </packet>
+    </subservice>
+    <subservice name="ST[12,06] Delete Parameter Monitoring Definitions" type="2" service="11" subservice="6" form="FormRequestST12_06">
+      <packet id="058" name="ST[12,06] Delete Parameter Monitoring Definitions" type="1" service="12" subservice="6" ack="15" data="00010005">
+      </packet>
+    </subservice>
+    <subservice name="ST[12,07] Modify Parameter Monitoring Definitions" type="2" service="11" subservice="7" form="FormRequestST12_07">
+      <packet id="059" name="ST[12,07] Modify Parameter Monitoring Definitions" type="1" service="12" subservice="7" ack="15" data="">
+      </packet>
+    </subservice>
+    <subservice name="ST[12,08] Report Parameter Monitoring Definitions" type="2" service="11" subservice="8" form="FormRequestST12_08">
+      <packet id="060" name="ST[12,08] Report Parameter Monitoring Definitions" type="1" service="12" subservice="8" ack="0" data="0000" />
+    </subservice>
+    <subservice name="ST[12,09] Parameter Monitoring Definition Report">
+      <packet id="061" name="ST[12,09] Parameter Monitoring Definition Report" type="0" service="12" subservice="9" template="report_tm[12_9].xml">
+      </packet>
+    </subservice>
+    <subservice name="ST[12,10] Report Out Of Limits">
+      <packet id="062" name="ST[12,10] Report Out Of Limits" type="1" service="12" subservice="10" ack="15" data="">
+      </packet>
+    </subservice>
+    <subservice name="ST[12,11] Out Of Limits Report">
+      <packet id="063" name="ST[12,11] Out Of Limits Report" type="0" service="12" subservice="11" template="report_tm[12_11].xml">
+      </packet>
+    </subservice>
+    <subservice name="ST[12,12] Check Transition Report">
+      <packet id="064" name="ST[12,12] Check Transition Report" type="0" service="12" subservice="12" template="report_tm[12_12].xml">
+      </packet>
+    </subservice>
+    <subservice name="ST[12,13] Report Status Of Parameter Monitoring Definition">
+      <packet id="065" name="ST[12,13] Report Status Of Parameter Monitoring Definition" type="1" service="12" subservice="13" ack="15" data="">
+      </packet>
+    </subservice>
+    <subservice name="ST[12,14] Parameter Monitoring Definition Status Report">
+      <packet id="066" name="ST[12,14] Parameter Monitoring Definition Status Report" type="0" service="12" subservice="14" template="report_tm[12_14].xml">
+      </packet>
+    </subservice>
+  </service>
+  <service name="ST[13] Large packet transfer" type="255" service="13" specialGUI="2">
+    <subservice name="ST[13,01] First Downlink Part Report">
+      <packet id="067" name="ST[13,01] First Downlink Part Report" type="0" service="13" subservice="1" template="report_tm[13_1].xml">
+      </packet>
+    </subservice>
+    <subservice name="ST[13,02] Internal Downlink Part Report">
+      <packet id="068" name="ST[13,02] Internal Downlink Part Report" type="0" service="13" subservice="2" template="report_tm[13_2].xml">
+      </packet>
+    </subservice>
+    <subservice name="ST[13,03] Last Downlink Part Report">
+      <packet id="069" name="ST[13,03] Last Downlink Part Report" type="0" service="13" subservice="3" template="report_tm[13_3].xml">
+      </packet>
+    </subservice>
+    <subservice name="ST[13,09] Uplink First Part" type="2" service="13" subservice="9" form="FormRequestST13_09">
+      <packet id="070" name="ST[13,09] Uplink First Part" type="1" service="13" subservice="9" ack="0" data="000100000102030405060708090a0b0c0d0e0f">
+      </packet>
+    </subservice>
+    <subservice name="ST[13,10] Uplink Intermediate Part" type="2" service="13" subservice="9" form="FormRequestST13_10">
+      <packet id="071" name="ST[13,10] Uplink Intermediate Part" type="1" service="13" subservice="10" ack="0" data="000100011112131415161718191a1b1c1d1e1f">
+      </packet>
+    </subservice>
+    <subservice name="ST[13,11] Uplink Last Part" type="2" service="13" subservice="9" form="FormRequestST13_11">
+      <packet id="072" name="ST[13,11] Uplink Last Part" type="1" service="13" subservice="11" ack="0" data="000100044142434445464748494a4b4c4d4e4f">
+      </packet>
+    </subservice>
+    <subservice name="ST[13,16] Uplink Abort Report">
+      <packet id="073" name="ST[13,16] Uplink Abort Report" type="0" service="13" subservice="16" template="report_tm[13_16].xml">
+      </packet>
+    </subservice>
+  </service>
+  <service name="ST[14] Real-time forwarding control">
+    <subservice name="ST[14,01] Add Report Types To App Process Configuration" type="2" service="14" subservice="1" form="FormRequestST14_01">
+      <packet id="074" name="ST[14,01] Add Report Types To App Process Configurationn" type="1" service="14" subservice="1" ack="15" data="0001001900011100020204">
+      </packet>
+    </subservice>
+    <subservice name="ST[14,02] Delete Report Types From App Process Configuration" type="2" service="14" subservice="2" form="FormRequestST14_02">
+      <packet id="075" name="ST[14,02] Delete Report Types From App Process Configuration" type="1" service="14" subservice="2" ack="15" data="0001001900011100020204">
+      </packet>
+    </subservice>
+    <subservice name="ST[14,03] Report Enabled Telemetry Source Packets">
+      <packet id="076" name="ST[14,03] Report Enabled Telemetry Source Packets" type="1" service="14" subservice="3" ack="0" data="">
+      </packet>
+    </subservice>
+    <subservice name="ST[14,04] Enabled Telemetry Source Packets Report">
+      <packet id="077" name="ST[14,04] Enabled Telemetry Source Packets Report" type="0" service="14" subservice="4" template="report_tm[14_4].xml">
+      </packet>
+    </subservice>
+  </service>
+  <service name="ST[15] On-board storage and retrieval">
+    <subservice name="ST[15,01] Enable Storage In Packet Stores" type="2" service="15" subservice="1" form="FormRequestST15_01">
+      <packet id="079" name="ST[15,01] Enable Storage In Packet Stores" type="1" service="15" subservice="1" ack="0" data="0000">
+      </packet>
+    </subservice>
+    <subservice name="ST[15,02] Disable Storage In Packet Stores" type="2" service="15" subservice="1" form="FormRequestST15_02">
+      <packet id="080" name="ST[15,02] Disable Storage In Packet Stores" type="1" service="15" subservice="2" ack="15" data="0000">
+      </packet>
+    </subservice>
+    <subservice name="ST[15,03] Add Packets To Storage Selection Definition" type="2" service="15" subservice="3" form="FormRequestST15_03">
+      <packet id="081" name="ST[15,03] Add Packets To Storage Selection Definition" type="1" service="15" subservice="3" ack="0" data="484b000000000000000000000000000001000300010300010a">
+      </packet>
+    </subservice>
+    <subservice name="ST[15,04] Remove Packets From Storage Selection Definition" type="2" service="15" subservice="4" form="FormRequestST15_04">
+      <packet id="082" name="ST[15,04] Remove Packets From Storage Selection Definition" type="1" service="15" subservice="4" ack="0" data="484b000000000000000000000000000001000300010300010a">
+      </packet>
+    </subservice>
+    <subservice name="ST[15,05] Report Content APID Store Configuration" type="2" service="15" subservice="5" form="FormRequestST15_05">
+      <packet id="083" name="ST[15,05] Report Content APID Store Configuration" type="1" service="15" subservice="5" ack="0" data="686f7573656b656570696e67000000">
+      </packet>
+    </subservice>
+    <subservice name="ST[15,06] Content APID Store Configuration Report">
+      <packet id="084" name="ST[15,06] Content APID Store Configuration Report" type="0" service="15" subservice="6" template="report_tm[15_6].xml">
+      </packet>
+    </subservice>
+    <subservice name="ST[15,09] Start By Time Range Retrieval" type="2" service="15" subservice="9" form="FormRequestST15_09">
+      <packet id="085" name="ST[15,09] Start By Time Range Retrieval" type="1" service="15" subservice="9" ack="15" data="0001484b0000000000000000000000000052A2145152A21453">
+      </packet>
+    </subservice>
+    <subservice name="ST[15,11] Delete Packet Store Content" type="2" service="15" subservice="11" form="FormRequestST15_11">
+      <packet id="086" name="ST[15,11] Delete Packet Store Content" type="1" service="15" subservice="11" ack="15" data="">
+      </packet>
+    </subservice>
+    <subservice name="ST[15,12] Report Content Summary Of Packet Stores" type="2" service="15" subservice="12" form="FormRequestST15_12">
+      <packet id="087" name="ST[15,12] Report Content Summary Of Packet Stores" type="1" service="15" subservice="12" ack="15" data="0001686f7573656b656570696e67000000">
+      </packet>
+    </subservice>
+    <subservice name="ST[15,13] Packet Store Content Summary Report">
+      <packet id="088" name="ST[15,13] Packet Store Content Summary Report" type="0" service="15" subservice="13" template="report_tm[15_13].xml">
+      </packet>
+    </subservice>
+    <subservice name="ST[15,14] Change Open Retrieval Starting Time" type="2" service="15" subservice="14" form="FormRequestST15_14">
+      <packet id="089" name="ST[15,14] Change Open Retrieval Starting Time" type="1" service="15" subservice="14" ack="15" data="">
+      </packet>
+    </subservice>
+    <subservice name="ST[15,15] Resume Open Retrieval Of Packet Stores" type="2" service="15" subservice="15" form="FormRequestST15_15">
+      <packet id="090" name="ST[15,15] Resume Open Retrieval Of Packet Stores" type="1" service="15" subservice="15" ack="15" data="0001484b00000000000000000000000000">
+      </packet>
+    </subservice>
+    <subservice name="ST[15,16] Suspend Open Retrieval Of Packet Stores" type="2" service="15" subservice="16" form="FormRequestST15_16">
+      <packet id="091" name="ST[15,16] Suspend Open Retrieval Of Packet Stores" type="1" service="15" subservice="16" ack="15" data="0001484b00000000000000000000000000">
+      </packet>
+    </subservice>
+    <subservice name="ST[15,17] Abort By Time Range Retrieval" type="2" service="15" subservice="17" form="FormRequestST15_17">
+      <packet id="092" name="ST[15,17] Abort By Time Range Retrieval" type="1" service="15" subservice="17" ack="15" data="">
+      </packet>
+    </subservice>
+    <subservice name="ST[15,18] Report Status Of Packet Stores" type="2" service="15" subservice="18" form="FormRequestST15_18">
+      <packet id="093" name="ST[15,18] Report Status Of Packet Stores" type="1" service="15" subservice="18" ack="15" data="">
+      </packet>
+    </subservice>
+    <subservice name="ST[15,19] Packet Stores Status Report">
+      <packet id="094" name="ST[15,19] Packet Stores Status Report" type="0" service="15" subservice="19" template="report_tm[15_19].xml">
+      </packet>
+    </subservice>
+    <subservice name="ST[15,20] Create Packet Stores" type="2" service="15" subservice="20" form="FormRequestST15_20">
+      <packet id="095" name="ST[15,20] Create Packet Stores" type="1" service="15" subservice="20" ack="15" data="">
+      </packet>
+    </subservice>
+    <subservice name="ST[15,21] Delete Packet Stores" type="2" service="15" subservice="21" form="FormRequestST15_21">
+      <packet id="096" name="ST[15,21] Delete Packet Stores" type="1" service="15" subservice="21" ack="15" data="">
+      </packet>
+    </subservice>
+    <subservice name="ST[15,22] Report Configuration Of Packet Stores" type="2" service="15" subservice="22" form="FormRequestST15_22">
+      <packet id="097" name="ST[15,22] Report Configuration Of Packet Stores" type="1" service="15" subservice="22" ack="15" data="">
+      </packet>
+    </subservice>
+    <subservice name="ST[15,23] Packet Store Configuration Report">
+      <packet id="098" name="ST[15,23] Packet Store Configuration Report" type="0" service="15" subservice="23" template="report_tm[15_23].xml">
+      </packet>
+    </subservice>
+    <subservice name="ST[15,24] Copy Packets In Time Window" type="2" service="15" subservice="24" form="FormRequestST15_24">
+      <packet id="099" name="ST[15,24] Copy Packets In Time Window" type="1" service="15" subservice="24" ack="15" data="">
+      </packet>
+    </subservice>
+    <subservice name="ST[15,25] Resize Packet Stores" type="2" service="15" subservice="25" form="FormRequestST15_25">
+      <packet id="100" name="ST[15,25] Resize Packet Stores" type="1" service="15" subservice="25" ack="15" data="">
+      </packet>
+    </subservice>
+    <subservice name="ST[15,26] Change Type To Circular" type="2" service="15" subservice="26" form="FormRequestST15_26">
+      <packet id="101" name="ST[15,26] Change Type To Circular" type="1" service="15" subservice="26" ack="15" data="">
+      </packet>
+    </subservice>
+    <subservice name="ST[15,27] Change Type To Bounded" type="2" service="15" subservice="27" form="FormRequestST15_27">
+      <packet id="102" name="ST[15,27] Change Type To Bounded" type="1" service="15" subservice="27" ack="15" data="">
+      </packet>
+    </subservice>
+    <subservice name="ST[15,28] Change Virtual Channel" type="2" service="15" subservice="28" form="FormRequestST15_28">
+      <packet id="103" name="ST[15,28] Change Virtual Channel" type="1" service="15" subservice="28" ack="15" data="">
+      </packet>
+    </subservice>
+  </service>
+  <service name="ST[17] Test">
+    <subservice name="ST[17,01] Are You Alive Test">
+      <packet id="104" name="ST[17,01] Are You Alive Test" type="1" service="17" subservice="1" ack="7" data="">
+      </packet>
+    </subservice>
+    <subservice name="ST[17,02] Are You Alive Test Report">
+      <packet id="105" name="ST[17,02] Are You Alive Test Report" type="0" service="17" subservice="2" template="report_tm[17_2].xml">
+      </packet>
+    </subservice>
+    <subservice name="ST[17,03] OnBoard Connection Test">
+      <packet id="106" name="ST[17,03] OnBoard Connection Test" type="1" service="17" subservice="3" ack="7" data="">
+      </packet>
+    </subservice>
+    <subservice name="ST[17,04] OnBoard Connection Test Report">
+      <packet id="107" name="ST[17,04] OnBoard Connection Test Report" type="0" service="17" subservice="4" template="report_tm[17_4].xml">
+      </packet>
+    </subservice>
+  </service>
+  <service name="ST[19] Event-action" type="255" service="19" specialGUI="3">
+    <subservice name="ST[19,01] Add Event Action" type="2" service="19" subservice="1" form="FormRequestST19_01">
+      <packet id="108" name="ST[19,01] Add Event Action" type="1" service="19" subservice="1" ack="15" data="02001200011803c00000062711030000a4da001200021803c00000062711010000caba">
+      </packet>
+    </subservice>
+    <subservice name="ST[19,02] Delete Event Action" type="2" service="19" subservice="2" form="FormRequestST19_02">
+      <packet id="109" name="ST[19,02] Delete Event Action" type="1" service="19" subservice="2" ack="15" data="0100120002">
+      </packet>
+    </subservice>
+    <subservice name="ST[19,03] Delete All Event Action">
+      <packet id="110" name="ST[19,03] Delete All Event Action" type="1" service="19" subservice="3" ack="15" data="">
+      </packet>
+    </subservice>
+    <subservice name="ST[19,04] Enable Event Action" type="2" service="19" subservice="4" form="FormRequestST19_04">
+      <packet id="111" name="ST[19,04] Enable Event Action" type="1" service="19" subservice="4" ack="15" data="0100120001">
+      </packet>
+    </subservice>
+    <subservice name="ST[19,05] Disable Event Action" type="2" service="19" subservice="5" form="FormRequestST19_05">
+      <packet id="112" name="ST[19,05] Disable Event Action" type="1" service="19" subservice="5" ack="15" data="0100120001">
+      </packet>
+    </subservice>
+    <subservice name="ST[19,06] Report Status Of Each Event Action">
+      <packet id="113" name="ST[19,06] Report Status Of Each Event Action" type="1" service="19" subservice="6" ack="15" data="">
+      </packet>
+    </subservice>
+    <subservice name="ST[19,07] Event Action Status Report">
+      <packet id="114" name="ST[19,07] Event Action Status Report" type="0" service="19" subservice="7" template="report_tm[19_7].xml">
+      </packet>
+    </subservice>
+    <subservice name="ST[19,08] Enable Event Action Function">
+      <packet id="115" name="ST[19,08] Enable Event Action Function" type="1" service="19" subservice="8" ack="15" data="">
+      </packet>
+    </subservice>
+    <subservice name="ST[19,09] Disable Event Action Function">
+      <packet id="116" name="ST[19,09] Disable Event Action Function" type="1" service="19" subservice="9" ack="15" data="">
+      </packet>
+    </subservice>
+    <subservice name="ST[19,10] Report Event Action Definitions" type="2" service="19" subservice="10" form="FormRequestST19_10">
+      <packet id="153" name="ST[19,10] Report Event Action Definitions" type="1" service="19" subservice="10" ack="15" data="02001400060014000f">
+      </packet>
+    </subservice>
+    <subservice name="ST[19,11] Event Action Definitions Report">
+      <packet id="154" name="ST[19,11] Event Action Definitions Report" type="0" service="19" subservice="11" template="report_tm[19_11].xml">
+      </packet>
+    </subservice>
+  </service>
+  <service name="ST[20] Parameter Management">
+    <subservice name="ST[20,01] Report Parameter Values" type="2" service="20" subservice="1" form="FormRequestST20_01">
+      <packet id="117" name="ST[20,01] Report Parameter Values" type="1" service="20" subservice="1" ack="0" data="00030005000b0022">
+      </packet>
+    </subservice>
+    <subservice name="ST[20,02] Parameter Values Report">
+      <packet id="118" name="ST[20,02] Parameter Values Report" type="0" service="20" subservice="2" template="report_tm[20_2].xml">
+      </packet>
+    </subservice>
+    <subservice name="ST[20,03] Set Parameter Values" type="2" service="20" subservice="3" form="FormRequestST20_03">
+      <packet id="119" name="ST[20,03] Set Parameter Values" type="1" service="20" subservice="3" ack="0" data="0001000138">
+      </packet>
+    </subservice>
+  </service>
+  <service name="ST[21] Request Sequencing" type="255" service="21" specialGUI="4">
+    <subservice name="ST[21,01] Direct Load Request Sequence" type="2" service="21" subservice="1" form="FormRequestST21_01">
+      <packet id="120" name="ST[21,01] Direct Load Request Sequence" type="1" service="21" subservice="1" ack="0" data="00030005000b0022">
+      </packet>
+    </subservice>
+    <subservice name="ST[21,02] Load Request Sequence By Ref" type="2" service="21" subservice="2" form="FormRequestST21_02">
+      <packet id="121" name="ST[21,02] Load Request Sequence By Ref" type="1" service="21" subservice="2" ack="0" data="0001000138">
+      </packet>
+    </subservice>
+    <subservice name="ST[21,03] Unload Request Sequence" type="2" service="21" subservice="3" form="FormRequestST21_03">
+      <packet id="122" name="ST[21,03] Unload Request Sequence" type="1" service="21" subservice="3" ack="0" data="0001000138">
+      </packet>
+    </subservice>
+    <subservice name="ST[21,04] Activate a Request Sequence" type="2" service="21" subservice="4" form="FormRequestST21_04">
+      <packet id="123" name="ST[21,04] Activate a Request Sequence" type="1" service="21" subservice="4" ack="0" data="0001000138">
+      </packet>
+    </subservice>
+    <subservice name="ST[21,05] Abort a Request Sequence" type="2" service="21" subservice="5" form="FormRequestST21_05">
+      <packet id="124" name="ST[21,05] Abort a Request Sequence" type="1" service="21" subservice="5" ack="0" data="0001000138">
+      </packet>
+    </subservice>
+    <subservice name="ST[21,06] Report Execution Status Of Each Request Sequence">
+      <packet id="125" name="ST[21,06] Report Execution Status Of Each Request Sequence" type="1" service="21" subservice="6" ack="0" data="">
+      </packet>
+    </subservice>
+    <subservice name="ST[21,07] Execution Status Of Each Request Sequence Report">
+      <packet id="126" name="ST[21,07] Execution Status Of Each Request Sequence Report" type="0" service="21" subservice="7" template="report_tm[21_7].xml">
+      </packet>
+    </subservice>
+    <subservice name="ST[21,08] Load By Ref And Activate Request Sequence" type="2" service="21" subservice="8" form="FormRequestST21_08">
+      <packet id="127" name="ST[21,08] Load By Ref And Activate Request Sequence" type="1" service="21" subservice="8" ack="0" data="0001000138">
+      </packet>
+    </subservice>
+    <subservice name="ST[21,09] Checksum Request Sequence" type="2" service="21" subservice="9" form="FormRequestST21_09">
+      <packet id="128" name="ST[21,09] Checksum Request Sequence" type="1" service="21" subservice="9" ack="0" data="546573745365712331000000000000">
+      </packet>
+    </subservice>
+    <subservice name="ST[21,10] Checksum Request Sequence Report">
+      <packet id="129" name="ST[21,10] Checksum Request Sequence Report" type="0" service="21" subservice="10" template="report_tm[21_10].xml">
+      </packet>
+    </subservice>
+    <subservice name="ST[21,11] Report Content Request Sequence" type="2" service="21" subservice="11" form="FormRequestST21_11">
+      <packet id="130" name="ST[21,11] Report Content Request Sequence" type="1" service="21" subservice="11" ack="0" data="546573745365712331000000000000">
+      </packet>
+    </subservice>
+    <subservice name="ST[21,12] Content Request Sequence Report">
+      <packet id="131" name="ST[21,12] Content Request Sequence Report" type="0" service="21" subservice="12" template="report_tm[21_12].xml">
+      </packet>
+    </subservice>
+    <subservice name="ST[21,13] Abort All Request Sequences And Report">
+      <packet id="132" name="ST[21,13] Abort All Request Sequences And Report" type="1" service="21" subservice="13" ack="0" data="">
+      </packet>
+    </subservice>
+    <subservice name="ST[21,14] Aborted Request Sequence Report">
+      <packet id="133" name="ST[21,14] Aborted Request Sequence Report" type="0" service="21" subservice="14" template="report_tm[21_14].xml">
+      </packet>
+    </subservice>
+  </service>
+  <service name="ST[23] File Management">
+    <subservice name="ST[23,01] Create File" type="2" service="23" subservice="1" form="FormRequestST23_01">
+      <packet id="134" name="ST[23,01] Create File" type="1" service="23" subservice="1" ack="0" data="00030005000b0022">
+      </packet>
+    </subservice>
+    <subservice name="ST[23,02] Delete File" type="2" service="23" subservice="2" form="FormRequestST23_02">
+      <packet id="135" name="ST[23,02] Delete File" type="1" service="23" subservice="2" ack="0" data="0001000138">
+      </packet>
+    </subservice>
+    <subservice name="ST[23,03] Report Attributes" type="2" service="23" subservice="3" form="FormRequestST23_03">
+      <packet id="136" name="ST[23,03] Report Attributes" type="1" service="23" subservice="3" ack="0" data="0001000138">
+      </packet>
+    </subservice>
+    <subservice name="ST[23,04] File Attributes Report">
+      <packet id="137" name="ST[23,04] File Attributes Report" type="0" service="23" subservice="4" template="report_tm[23_4].xml">
+      </packet>
+    </subservice>
+    <subservice name="ST[23,05] Lock File" type="2" service="23" subservice="5" form="FormRequestST23_05">
+      <packet id="138" name="ST[23,05] Lock File" type="1" service="23" subservice="5" ack="0" data="0001000138">
+      </packet>
+    </subservice>
+    <subservice name="ST[23,06] Unlock File" type="2" service="23" subservice="6" form="FormRequestST23_06">
+      <packet id="139" name="ST[23,06] Unlock File" type="1" service="23" subservice="6" ack="0" data="0001000138">
+      </packet>
+    </subservice>
+    <subservice name="ST[23,07] Find File" type="2" service="23" subservice="7" form="FormRequestST23_07">
+      <packet id="140" name="ST[23,07] Find File" type="1" service="23" subservice="7" ack="0" data="0001000138">
+      </packet>
+    </subservice>
+    <subservice name="ST[23,08] Found File Report">
+      <packet id="141" name="ST[23,08] Found File Report" type="0" service="23" subservice="8" template="report_tm[23_8].xml">
+      </packet>
+    </subservice>
+    <subservice name="ST[23,09] Create Directory" type="2" service="23" subservice="9" form="FormRequestST23_09">
+      <packet id="142" name="ST[23,09] Create Directory" type="1" service="23" subservice="9" ack="0" data="0001000138">
+      </packet>
+    </subservice>
+    <subservice name="ST[23,10] Delete Directory" type="2" service="23" subservice="10" form="FormRequestST23_10">
+      <packet id="143" name="ST[23,10] Delete Directory" type="1" service="23" subservice="10" ack="0" data="0001000138">
+      </packet>
+    </subservice>
+    <subservice name="ST[23,11] Rename Directory" type="2" service="23" subservice="11" form="FormRequestST23_11">
+      <packet id="144" name="ST[23,11] Rename Directory" type="1" service="23" subservice="11" ack="0" data="0001000138">
+      </packet>
+    </subservice>
+    <subservice name="ST[23,12] Report Summary Directory" type="2" service="23" subservice="12" form="FormRequestST23_12">
+      <packet id="145" name="ST[23,12] Report Summary Directory" type="1" service="23" subservice="12" ack="0" data="0001000138">
+      </packet>
+      <packet id="155" name="ST[23,12] Report Summary Directory" description="" type="1" service="23" subservice="12" ack="0" data="002E2F686F6D652F6D6F64656D2F446F776E6C6F6164732F67722D7075732F6578616D706C65732F5465737453543233" form="FormRequestST23_12" />
+    </subservice>
+    <subservice name="ST[23,13] Summary Directory Report">
+      <packet id="146" name="ST[23,13] Summary Directory Report" type="0" service="23" subservice="13" template="report_tm[23_13].xml">
+      </packet>
+    </subservice>
+    <subservice name="ST[23,14] Copy File" type="2" service="23" subservice="14" form="FormRequestST23_14">
+      <packet id="147" name="ST[23,14] Copy File" type="1" service="23" subservice="14" ack="0" data="0001000138">
+      </packet>
+    </subservice>
+    <subservice name="ST[23,15] Move File" type="2" service="23" subservice="15" form="FormRequestST23_15">
+      <packet id="148" name="ST[23,15] Move File" type="1" service="23" subservice="15" ack="0" data="0001000138">
+      </packet>
+    </subservice>
+  </service>
+</xml>

@@ -1,0 +1,19 @@
+﻿<xml>
+	<template name="ST[01,08] Failed Completion Of Execution" l="576" h="770">
+		<item type="TextBox" name="textboxPacketVersion" text="-" x="120" y="15" l="70" h="20" data_type="uint8" data_size="0" data_mask="0x07" data_shift="5" />	
+		<item type="Label" name="labelPacketVersion" text="Packet Version" x="12" y="3" l="70" h="13" data_type=""/>			
+		<item type="CheckBox" name="checkboxPacketType" text="Packet Type" x="12" y="30" l="150" h="20" data_type="uint8" data_size="0" data_mask="0x01" data_shift="4" />	
+		<item type="CheckBox" name="checkboxSecondaryHeader" text="Secondary Header" x="170" y="0" l="150" h="20" data_type="uint8" data_size="0" data_mask="0x01" data_shift="3"/>	
+		<item type="TextBox" name="textboxAPID" text="-" x="120" y="30" l="70" h="20" data_type="uint16" data_size="2" data_mask="0x03ff" data_shift="0"/>	
+		<item type="Label" name="labelAPID" text="APID" x="12" y="3" l="70" h="13" data_type=""/>			
+		<item type="TextBox" name="textboxSeqFlags" text="-" x="120" y="30" l="70" h="20" data_type="uint8" data_size="0" data_mask="0x03" data_shift="6"/>		
+		<item type="Label" name="labelSeqFlags" text="Sequence Flags" x="12" y="3" l="70" h="13" data_type=""/>			
+		<item type="TextBox" name="textboxPacketSeqCounter" text="-" x="120" y="30" l="70" h="20" data_type="uint16" data_size="2" data_mask="0x3fff" data_shift="0"/>	
+		<item type="Label" name="labelPacketSeqCounter" text="Packet Seq. Counter" x="12" y="2" l="70" h="13" data_type=""/>	
+		<item type="TextBox" name="textboxStep" text="-" x="120" y="30" l="70" h="20" data_type="uint8" data_size="1" data_mask="0xff" data_shift="0"/>
+		<item type="Label" name="labelStep" text="Step N" x="12" y="2" l="70" h="13" data_type=""/>
+		<item type="TextBox" name="textboxErrorCode" text="-" x="120" y="30" l="70" h="20" data_type="uint16" data_size="2" data_mask="0xffff" data_shift="0"/>
+		<item type="Label" name="labelErrorCode" text="Error Code" x="12" y="2" l="70" h="13" data_type=""/>
+	</template>			
+</xml>
+

@@ -1,0 +1,11 @@
+﻿<xml>
+	<template name="ST[23,04] File Attributes Report" l="576" h="770">
+		<item type="TextBox" name="textPath" text="-" x="80" y="10" l="350" h="20" data_type="str" data_size="0" data_mask="-1" data_shift="0" id="false" />	
+		<item type="Label" name="labelPath" text="Path " x="12" y="2" l="90" h="13" data_type=""/>
+		<item type="TextBox" name="textFile" text="-" x="80" y="30" l="350" h="20" data_type="str" data_size="0" data_mask="-1" data_shift="0" id="false" />	
+		<item type="Label" name="labelFile" text="File " x="12" y="2" l="90" h="13" data_type=""/>
+		<item type="TextBox" name="textObject" text="-" x="80" y="30" l="100" h="20" data_type="uint32" data_size="0" data_mask="0xffffffff" data_shift="0" id="false"/>	
+		<item type="Label" name="labelObject" text="Size " x="12" y="2" l="60" h="13" data_type=""/>			
+	</template>			
+</xml>
+

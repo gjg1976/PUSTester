@@ -1,0 +1,17 @@
+﻿<xml>
+	<template name="ST[14,04] Enabled Telemetry Source Packets Report" l="576" h="770">
+		<item type="Repeater" x="120" y="30" data_type="uint16" data_size="2" data_mask="0xffff" data_shift="0" >
+			<subitem type="TextBox" name="textAPID" text="-" x="80" y="-2" l="30" h="20" data_type="uint16" data_size="2" data_mask="0xff" data_shift="0"/>	
+			<subitem type="Label" name="labelAPID" text="APID " x="12" y="2" l="90" h="13" data_type=""/>			
+			<subitem type="Repeater" x="120" y="30" data_type="uint16" data_size="2" data_mask="0xffff" data_shift="0" >
+				<subitem type="TextBox" name="textType" text="-" x="230" y="-2" l="30" h="20" data_type="uint8" data_size="1" data_mask="0xff" data_shift="0"/>	
+				<subitem type="Label" name="labelType" text="Type " x="170" y="2" l="90" h="13" data_type=""/>			
+				<subitem type="Repeater" x="120" y="30" data_type="uint16" data_size="2" data_mask="0xffff" data_shift="0" >
+					<subitem type="TextBox" name="textSubType" text="-" x="310" y="-2" l="30" h="20" data_type="uint8" data_size="1" data_mask="0xff" data_shift="0"/>	
+					<subitem type="Label" name="labelSubType" text="SubType " x="260" y="2" l="90" h="13" data_type=""/>			
+				</subitem>
+			</subitem>
+		</item>		
+	</template>			
+</xml>
+

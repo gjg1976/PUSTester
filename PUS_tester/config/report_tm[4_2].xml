@@ -1,0 +1,25 @@
+﻿<xml>
+	<template name="ST[04,02] Parameter Statistics Report" l="576" h="770">
+		<item type="TextBox" name="textStartTime" text="-" x="120" y="15" l="50" h="20" data_type="uin32" data_size="4" data_mask="0xffffffff" data_shift="0"/>	
+		<item type="TextBox" name="textEndTime" text="-" x="270" y="0" l="50" h="20" data_type="uin32" data_size="4" data_mask="0xffffffff" data_shift="0"/>	
+		<item type="Label" name="labelStartTime" text="Start time" x="12" y="2" l="90" h="13" data_type=""/>			
+		<item type="Label" name="labelEndTime" text="End time" x="180" y="0" l="90" h="13" data_type=""/>			
+		<item type="Repeater" x="120" y="30" data_type="uint16" data_size="2" data_mask="0xffff" data_shift="0" >
+			<subitem type="TextBox" name="textParam" text="-" x="120" y="0" l="70" h="20" data_type="uint16" data_size="2" data_mask="0xffff" data_shift="0"/>	
+			<subitem type="TextBox" name="textSamples" text="-" x="220" y="0" l="70" h="20" data_type="uint16" data_size="2" data_mask="0xffff" data_shift="0"/>	
+			<subitem type="Label" name="labelParam" text="Parameter ID " x="12" y="3" l="90" h="13" data_type=""/>			
+			<subitem type="Label" name="labelSamples" text="N Samples " x="180" y="0" l="90" h="13" data_type=""/>			
+			<subitem type="TextBox" name="textMaxValue" text="-" x="220" y="30" l="70" h="20" data_type="uint16" data_size="2" data_mask="0xffff" data_shift="0"/>
+			<subitem type="TextBox" name="textMaxTime" text="-" x="330" y="0" l="70" h="20" data_type="uint32" data_size="4" data_mask="0xffffffff" data_shift="0"/>
+			<subitem type="Label" name="labelMaxTime" text="Time " x="290" y="2" l="90" h="13" data_type=""/>			
+			<subitem type="Label" name="labelMaxValue" text="Max Value " x="180" y="0" l="90" h="13" data_type=""/>
+			<subitem type="TextBox" name="textMinValue" text="-" x="220" y="30" l="70" h="20" data_type="uint16" data_size="2" data_mask="0xffff" data_shift="0"/>
+			<subitem type="TextBox" name="textMinTime" text="-" x="330" y="0" l="70" h="20" data_type="uint32" data_size="4" data_mask="0xffffffff" data_shift="0"/>			
+			<subitem type="Label" name="labelMinValue" text="Min Value " x="180" y="2" l="90" h="13" data_type=""/>			
+			<subitem type="Label" name="labelMinTime" text="Time " x="290" y="90" l="0" h="13" data_type=""/>			
+			<subitem type="TextBox" name="textMeanValue" text="-" x="220" y="30" l="70" h="20" data_type="uint16" data_size="2" data_mask="0xffff" data_shift="0"/>
+			<subitem type="Label" name="labelMeanValue" text="Mean Value " x="180" y="3" l="90" h="13" data_type=""/>			
+		</item>
+	</template>			
+</xml>
+

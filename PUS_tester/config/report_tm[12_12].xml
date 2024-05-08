@@ -1,0 +1,31 @@
+﻿<xml>
+	<template name="ST[12,12] Check Transition Report" l="576" h="770">
+		<item type="Repeater" x="120" y="30" data_type="uint16" data_size="2" data_mask="0xffff" data_shift="0" >
+			<subitem type="TextBox" name="textPMONID" text="-" x="110" y="0" l="30" h="20" data_type="uint16" data_size="2" data_mask="0xffff" data_shift="0" id="false" />	
+			<subitem type="TextBox" name="textParamID" text="-" x="230" y="0" l="70" h="20" data_type="uint16" data_size="2" data_mask="0xffff" data_shift="0" id="true"/>	
+			<subitem type="ComboBox" name="comboBoxType" x="370" y="0" l="90" h="13" data_type="uint8" data_size="1" data_mask="0xff" data_shift="0" >
+				<option value="0" label="Expected">
+					<subitem type="TextBox" name="textParamMask" text="-" x="480" y="0" l="50" h="20" data_type="id" data_size="0" data_mask="-1" data_shift="0" id="false"/>		
+					<subitem type="Label" name="labelParamMask" text="Mask " x="410" y="0" l="60" h="13" data_type=""/>	
+				</option>	
+				<option value="1" label="Limit"/>
+				<option value="2" label="Delta"/>
+			</subitem>	
+			<subitem type="Label" name="labelPMONID" text="PMON ID " x="12" y="2" l="90" h="13" data_type=""/>			
+			<subitem type="Label" name="labelParamID" text="Parameter ID " x="160" y="0" l="60" h="13" data_type=""/>	
+			<subitem type="Label" name="labelType" text="Type " x="310" y="0" l="60" h="13" data_type=""/>	
+			
+			<subitem type="TextBox" name="textParamValue" text="-" x="240" y="30" l="50" h="20" data_type="id" data_size="0" data_mask="-1" data_shift="0" id="false"/>
+			<subitem type="TextBox" name="textLimitCrossed" text="-" x="350" y="0" l="50" h="20" data_type="id" data_size="0" data_mask="-1" data_shift="0" id="false"/>
+			<subitem type="Label" name="labelParamValue" text="Value " x="180" y="2" l="60" h="13" data_type=""/>			
+			<subitem type="Label" name="labelLimitCrossed" text="Limit " x="290" y="0" l="60" h="13" data_type=""/>
+			<subitem type="TextBox" name="textPrevState" text="-" x="140" y="30" l="50" h="20" data_type="uint8" data_size="1" data_mask="0xff" data_shift="0" id="false"/>	
+			<subitem type="TextBox" name="textCurrState" text="-" x="270" y="0" l="50" h="20" data_type="uint8" data_size="1" data_mask="0xff" data_shift="0" id="false"/>	
+			<subitem type="TextBox" name="textChgOBT" text="-" x="380" y="0" l="70" h="20" data_type="uint32" data_size="4" data_mask="0xffffffff" data_shift="0" id="false"/>	
+			<subitem type="Label" name="labelPrevState" text="Prev State " x="60" y="2" l="80" h="13" data_type=""/>			
+			<subitem type="Label" name="labelCurrentState" text="Curr State " x="190" y="0" l="80" h="13" data_type=""/>			
+			<subitem type="Label" name="labelChgOBT" text="OBT Chg " x="320" y="0" l="60" h="13" data_type=""/>	
+		</item>	
+	</template>			
+</xml>
+

@@ -1,0 +1,9 @@
+﻿<xml>
+	<template name="ST[03,03] Delete Housekeeping Report Structure" l="576" h="800">
+		<item type="Repeater" x="120" y="15" data_type="uint8" data_size="1" data_mask="0xff" data_offset="0" >
+			<subitem type="TextBox" name="textParam" text="-" x="120" y="0" l="70" h="20" data_type="uint8" data_size="2" data_mask="0xff" data_shift="1"/>	
+			<subitem type="Label" name="labelParam" text="Parameter ID " x="12" y="3" l="90" h="13" data_type=""/>			
+		</item>
+	</template>			
+</xml>
+

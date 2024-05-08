@@ -1,0 +1,13 @@
+﻿<xml>
+	<template name="ST[20,02] Parameter Values Report" l="576" h="770">
+		<item type="TextBox" name="textboxParamCount" text="-" x="120" y="15" l="70" h="20" data_type="uint16" data_size="2" data_mask="0xffff" data_shift="0" />	
+		<item type="Label" name="labelParamCount" text="Param Count" x="12" y="3" l="70" h="13" data_type=""/>			
+		<item type="ListRepeater" x="120" y="30" data_list="5,11,34" >
+			<subitem type="TextBox" name="textParam" text="-" x="120" y="0" l="70" h="20" data_type="uint16" data_size="2" data_mask="0xffff" data_shift="0" />		
+			<subitem type="TextBox" name="textParamValue" text="-" x="270" y="0" l="70" h="20" data_type="id" data_size="0" data_mask="-1" data_shift="0" id="false"/>
+			<subitem type="Label" name="labelParam" text="Parameter ID " x="12" y="3" l="90" h="13" data_type=""/>	
+			<subitem type="Label" name="labelParam" text="Value" x="200" y="3" l="50" h="13" data_type=""/>			
+		</item>		
+	</template>			
+</xml>
+

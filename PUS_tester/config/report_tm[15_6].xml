@@ -1,0 +1,19 @@
+﻿<xml>
+	<template name="ST[15,06] Content APID Store Configuration Report" l="576" h="770">
+		<item type="TextBox" name="textStoreName" text="-" x="80" y="0" l="150" h="20" data_type="str" data_size="0f" data_mask="-1" data_shift="0" id="false" />	
+		<item type="Label" name="labelStoreName" text="Store " x="12" y="2" l="90" h="13" data_type=""/>
+		<item type="Repeater" x="120" y="30" data_type="uint16" data_size="2" data_mask="0xffff" data_shift="0" >
+			<subitem type="TextBox" name="textAPID" text="-" x="230" y="-2" l="30" h="20" data_type="uint16" data_size="2" data_mask="0xffff" data_shift="0"/>	
+			<subitem type="Label" name="labelAPID" text="APID " x="170" y="2" l="90" h="13" data_type=""/>			
+			<subitem type="Repeater" x="120" y="30" data_type="uint16" data_size="2" data_mask="0xffff" data_shift="0" >
+				<subitem type="TextBox" name="textType" text="-" x="310" y="-2" l="30" h="20" data_type="uint8" data_size="1" data_mask="0xff" data_shift="0"/>	
+				<subitem type="Label" name="labelType" text="Type " x="260" y="2" l="90" h="13" data_type=""/>			
+				<subitem type="Repeater" x="120" y="30" data_type="uint16" data_size="2" data_mask="0xffff" data_shift="0" >
+					<subitem type="TextBox" name="textSubType" text="-" x="410" y="-2" l="30" h="20" data_type="uint8" data_size="1" data_mask="0xff" data_shift="0"/>	
+					<subitem type="Label" name="labelSubType" text="SubType " x="350" y="2" l="90" h="13" data_type=""/>			
+				</subitem>
+			</subitem>
+		</item>		
+	</template>			
+</xml>
+

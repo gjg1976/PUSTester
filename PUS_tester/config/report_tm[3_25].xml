@@ -1,0 +1,11 @@
+﻿<xml>
+	<template name="ST[03,25] Housekeeping Parameters Report" l="576" h="770">
+		<item type="TextBox" name="textboxHKParamStructID" text="-" x="120" y="15" l="70" h="20" data_type="uint8" data_size="1" data_mask="0xff" data_shift="0" />	
+		<item type="Label" name="labelHKParamStructID" text="Param Struct ID" x="12" y="3" l="70" h="13" data_type=""/>			
+		<item type="ListRepeater" x="120" y="30" data_list="5,1,16,34,11,31" >
+			<subitem type="TextBox" name="textParam" text="-" x="120" y="0" l="70" h="20" data_type="id" data_size="0" data_mask="-1" data_shift="0" id="false"/>	
+			<subitem type="Label" name="labelParam" text="Parameter ID " x="12" y="3" l="90" h="13" data_type=""/>			
+		</item>		
+	</template>			
+</xml>
+

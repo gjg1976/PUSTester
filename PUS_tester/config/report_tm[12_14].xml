@@ -1,0 +1,10 @@
+﻿<xml>
+	<template name="ST[12,14] Parameter Monitoring Definition Status Report" l="576" h="770">
+		<item type="Repeater" x="120" y="30" data_type="uint16" data_size="2" data_mask="0xffff" data_shift="0" >
+			<subitem type="TextBox" name="textPMONID" text="-" x="100" y="0" l="50" h="20" data_type="uint16" data_size="2" data_mask="0xffff" data_shift="0" id="false" />	
+			<subitem type="Label" name="labelPMONID" text="PMON ID " x="12" y="2" l="80" h="13" data_type=""/>			
+			<subitem type="CheckBox" name="checkboxEnable" text="Status " x="160" y="0" l="60" h="20" data_type="uint8" data_size="1" data_mask="0x01" data_shift="0" id="false"/>
+		</item>	
+	</template>			
+</xml>
+

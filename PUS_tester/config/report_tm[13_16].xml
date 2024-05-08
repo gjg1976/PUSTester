@@ -1,0 +1,9 @@
+﻿<xml>
+	<template name="ST[13,16] Uplink Abort Report" l="576" h="770">
+		<item type="TextBox" name="textID" text="-" x="70" y="-2" l="50" h="20" data_type="uint16" data_size="2" data_mask="0xffff" data_shift="0"/>	
+		<item type="TextBox" name="textError" text="-" x="80" y="-2" l="50" h="20" data_type="uint8" data_size="1" data_mask="0xff" data_shift="0"/>	
+		<item type="Label" name="labelID" text="ID " x="190" y="2" l="50" h="13" data_type=""/>
+		<item type="Label" name="labelError" text="Error " x="130" y="2" l="50" h="13" data_type=""/>
+	</template>			
+</xml>
+
