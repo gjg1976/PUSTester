@@ -1,0 +1,60 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="PUS_tester.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="ApplicationID" Type="System.UInt16" Scope="Application">
+      <Value Profile="(Default)">25</Value>
+    </Setting>
+    <Setting Name="TC_XML_file" Type="System.String" Scope="User">
+      <Value Profile="(Default)">.\config\PUS_services.xml</Value>
+    </Setting>
+    <Setting Name="Max_payload_size" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">65536</Value>
+    </Setting>
+    <Setting Name="DefaultCOMUART" Type="System.String" Scope="User">
+      <Value Profile="(Default)">COM2</Value>
+    </Setting>
+    <Setting Name="SerialLogRxFilePath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">.\Logs\SerialLogs\</Value>
+    </Setting>
+    <Setting Name="SerialLogTxFilePath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">.\Logs\SerialLogs\</Value>
+    </Setting>
+    <Setting Name="LogFilePath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">.\Logs\</Value>
+    </Setting>
+    <Setting Name="OBTType" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="PField" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="Epoch" Type="System.DateTime" Scope="User">
+      <Value Profile="(Default)">1986-06-01</Value>
+    </Setting>
+    <Setting Name="BasicTimeSize" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">4</Value>
+    </Setting>
+    <Setting Name="FracTimeSize" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="CRCReports" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="Param_XML_file" Type="System.String" Scope="User">
+      <Value Profile="(Default)">.\config\parametersdef.xml</Value>
+    </Setting>
+    <Setting Name="ST8FunctionSize" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">15</Value>
+    </Setting>
+    <Setting Name="ST8FunctionArgSize" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">15</Value>
+    </Setting>
+    <Setting Name="ST21StringSize" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">15</Value>
+    </Setting>
+    <Setting Name="ST15StoresIDSize" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">15</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
