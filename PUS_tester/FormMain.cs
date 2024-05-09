@@ -1733,6 +1733,7 @@ namespace PUS_tester
 
         public void CopyTreeNodes(TreeView treeview1, TreeView treeview2)
         {
+            treeview2.Nodes.Clear();
             TreeNode newTn;
             foreach (TreeNode tn in treeview1.Nodes)
             {
