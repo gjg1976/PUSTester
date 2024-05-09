@@ -9,4 +9,4 @@ The user manual is located in
 
 Just run the setup.exe in folder 
 ##### \PUSTesterSetup\Release\ 
-or compile the program for yourself in Visual Studio 2019
+or compile the program for yourself using Visual Studio 2019
